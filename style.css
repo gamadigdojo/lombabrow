@@ -518,6 +518,10 @@ transition: .2s;
 .navbar.open{
 right: 0;
 }
+
+.cta-img img{
+    width: 100%;
+}
 }
 
 @media (max-width: 890px){
