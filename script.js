@@ -14,3 +14,16 @@ menu.onclick = () => {
 window.onscroll = () => {
     navbar.classList.remove('open')
 }
+
+
+document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("fa-arrow-down")) {
+      e.target.nextElementSibling.nextElementSibling.classList.toggle("slide");
+      if (e.target.style.transform) {
+        e.target.style.removeProperty("transform");
+      } else {
+        e.target.style.transform = "rotate(180deg)";
+      }
+    }
+  });
+  

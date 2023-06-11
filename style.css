@@ -448,6 +448,62 @@ section{
     color: var(--main-color);
 }
 
+.container-faq{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5em;
+    margin: 10em auto;  
+    padding: 5em;
+  }
+  
+  .container-faq h1{
+    font-size: 5em;
+  }
+  
+  
+  .container-faq input {
+    background-color: transparent;
+    font-size: 2em;
+    border: none;
+    border-bottom: 2px solid black;
+    width: 80vw;
+    padding: 0.5em;
+  }
+  
+  .container-faq .fa {
+    font-size: 1.2em;
+    transition: 0.3s;
+  }
+  
+  .container-faq .fa:hover {
+    cursor: pointer;
+  }
+  
+  .container-faq .answers1,
+  .container-faq .answers2,
+  .container-faq .answers3,
+  .container-faq .answers4,
+  .container-faq .answers5,
+  .container-faq .answers6,
+  .container-faq .answers7,
+  .container-faq .answers8 {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+    text-align: start;
+    width: 80vw; 
+    margin: 0 auto;
+    font-size: 1.5em;
+  }
+  
+  .container-faq .question .slide {
+    max-height: 30em;
+    overflow: auto;
+    transition: 0.3s;
+  }
+  
+
 @media (max-width: 1410px){
 header{
     padding: 10px 3%;
@@ -470,6 +526,9 @@ section{
     transition: .2s;
 }
 
+.container-faq input {
+    font-size: 1.5em;
+  }
 }
 
 @media (max-width: 1050px){
@@ -482,6 +541,22 @@ transition: .2s;
 .home{
     height: 84vh;
 }
+.container-faq h1{
+    font-size: 4em;
+  }
+.container-faq input {
+    font-size: 1.2em;
+  }
+  .container-faq .answers1,
+  .container-faq .answers2,
+  .container-faq .answers3,
+  .container-faq .answers4,
+  .container-faq .answers5,
+  .container-faq .answers6,
+  .container-faq .answers7,
+  .container-faq .answers8 {
+    font-size: 1em;
+  }
 }
 
 @media (max-width: 1025px){
@@ -513,6 +588,26 @@ transition: .2s;
 .navbar.open{
 right: 0;
 }
+.container-faq h1{
+    font-size: 3em;
+  }
+.container-faq input {
+    font-size: 1.2em;
+  }
+  .container-faq .answers1,
+  .container-faq .answers2,
+  .container-faq .answers3,
+  .container-faq .answers4,
+  .container-faq .answers5,
+  .container-faq .answers6,
+  .container-faq .answers7,
+  .container-faq .answers8 {
+    font-size: 1em;
+  }
+
+  .container-faq{
+    padding: 2em;
+  }
 }
 
 @media (max-width: 890px){
@@ -535,10 +630,33 @@ right: 0;
     grid-template-columns: 1fr;
     gap: 1rem;
 }
+.container-faq input {
+    font-size: 1em;
+  }
+  .container-faq .fa{
+    font-size: 1em;
+  }
 }
 
 @media (max-width: 600px){
 .home{
     height: 120vh;
 }
+.container-faq input {
+    font-size: 0.7em;
+  }
+  .container-faq .answers1,
+  .container-faq .answers2,
+  .container-faq .answers3,
+  .container-faq .answers4,
+  .container-faq .answers5,
+  .container-faq .answers6,
+  .container-faq .answers7,
+  .container-faq .answers8 {
+    font-size: 0.8em;
+  }
+
+  .container-faq{
+    padding: 1em;
+  }
 }
