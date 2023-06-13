@@ -460,6 +460,7 @@ section{
     gap: 5em;
     margin: 10em auto;  
     padding: 5em;
+    background-image: url(./asset/homepagebg.avif);
   }
   
   .container-faq h1{
